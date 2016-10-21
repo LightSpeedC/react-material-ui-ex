@@ -12,7 +12,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 require('react-tap-event-plugin')();
 
 import RaisedButton from 'material-ui/RaisedButton';
-import AppHeader from './app-header.jsx';
+import AppHeader from './app-header';
 
 const MyAwesomeReactComponent = props =>
 	<div>

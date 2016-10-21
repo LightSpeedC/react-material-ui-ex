@@ -16,10 +16,10 @@ task('default', ['build'], cb => run('watch', 'web', cb));
 task('build', cb => run('browserify', 'uglify', cb));
 
 task('watch', () =>
-	gulp.watch('./src/jsx/*.jsx', ['build']));
+	gulp.watch('./src/jsx/*.js', ['build']));
 
 task('browserify', () =>
-	browserify('./src/jsx/app.jsx', {debug: true})
+	browserify('./src/jsx/app.js', {debug: true})
 	.transform(babelify, {presets: ['es2015', 'react']})
 	.bundle()
 	.pipe(plumber())

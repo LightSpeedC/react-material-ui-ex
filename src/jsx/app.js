@@ -12,18 +12,26 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 require('react-tap-event-plugin')();
 
 import RaisedButton from 'material-ui/RaisedButton';
-import AppHeader from './app-header';
+//import AppHeader from './app-header';
+import AppBar from 'material-ui/AppBar';
 
-const MyAwesomeReactComponent = props =>
-	<div>
-		<AppHeader />
-		<p>test p</p>
-		<RaisedButton label="デフォルト" />
-	</div>;
+const handleClick = e => alert('ok1');
 
+//<AppHeader />
 const App = props =>
 	<MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
-		<MyAwesomeReactComponent />
+		<AppBar
+			title="Xアプリのヘッダ・タイトル"
+			iconClassNameRight="muidocs-icon-navigation-expand-more"
+			onLeftIconButtonTouchTap={handleClick}
+		/>
+		<p>test p</p>
+		<RaisedButton label="デフォルト" />
 	</MuiThemeProvider>;
+
+//const App = props =>
+//	<MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
+//		<MyAwesomeReactComponent />
+//	</MuiThemeProvider>;
 
 ReactDOM.render(<App />, document.getElementById('app'));

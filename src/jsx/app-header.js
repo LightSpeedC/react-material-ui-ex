@@ -12,13 +12,14 @@ function handleClick() {
 	alert('onClick triggered on the title component');
 }
 
+//			{/*onClick={handleClick}*/}
+//			onTitleTouchTap={handleTouchTap}
 const AppHeader = () =>
 	<header>
 		<AppBar
 			title="アプリのヘッダ・タイトル"
-			onTitleTouchTap={handleTouchTap}
-			onClick={handleClick}
 			iconClassNameRight="muidocs-icon-navigation-expand-more"
+			onLeftIconButtonTouchTap={handleTouchTap}
 		/>
 	</header>;
 

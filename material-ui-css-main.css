@@ -1,8 +1,12 @@
 /* custom font icons */
+/*
 @import "font-icons/style.css";
+*/
 
 /* hightlight.js for syntax highlighting */
+/*
 @import "github.css";
+*/
 
 a {
   color: #ff4081;
@@ -28,9 +32,11 @@ body {
 }
 
 /* Used in StylesOverridingCssExample.js */
+/*
 .styles-overriding-css-example {
   width: 50% !important;
   margin: 0 auto !important;
   border: 2px solid #FF9800 !important;
   background-color: #ffd699 !important;
 }
+*/
